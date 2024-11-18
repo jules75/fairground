@@ -1,0 +1,160 @@
+
+
+/**
+013730	green
+88432a	brown
+e3c0b5	pink
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto 5em auto;
+}
+
+/**
+ * color schemes
+ */
+body#home, body#home main {
+    background: #e3c0b5;
+    color: #88432a;
+    path {
+        fill: #88432a;
+    }
+    header, header a {
+        color: #88432a;
+    }
+}
+body#about, body#about main {
+    background: #013730;
+    color: #ddd;
+    path {
+        fill: #ddd;
+    }
+    header, header a {
+        color: #ddd;
+    }
+}
+body#services, body#services main {
+    background: #88432a;
+    color: #eee;
+    path {
+        fill: #eee;
+    }
+    header, header a {
+        color: #eee;
+    }
+    h2 {
+        border-bottom: 1px solid #eee;
+    }
+}
+
+header, main h2 {
+    font-family: "Work Sans", sans-serif;
+}
+
+header {
+    padding-top: 2em;
+    font-size: 1.5rem;
+    div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    }
+    img#logo {
+        width: 600px;
+        margin: 2rem auto;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 1em;
+    }
+    ul#socials svg {
+        width: 40px;
+        height: 40px;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+main {
+    margin: auto;
+    font-size: 1.5rem;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    overflow: auto;
+    h1 {
+        text-align: center;
+        padding: 0.5em;
+        margin: 2em 0 1em 0;
+        border-radius: 10px;
+    }
+    h1, h2 {
+        font-weight: normal;
+    }
+    h2 {
+        margin: 1.25em 0 -0.5em 0;
+    }
+    img {
+        width: 100%;
+        border-radius: 15px;
+    }
+    img#kel {
+        float: left;
+        width: 300px;
+        margin: 0 15px 15px 0;
+    }
+    img#kim {
+        float: right;
+        width: 300px;
+        margin: 0 0 15px 15px;
+    }
+    p {
+        margin: 1em 0;
+    }
+    p.divider {
+        clear: both;
+        padding: 1em;
+        border-bottom: 1px solid white;
+    }
+    ul {
+        padding: 0 0 0 2em;
+        list-style-type: square;
+    }
+    div#offerings {
+        font-size: 1.5rem;
+        padding: 2em 0;
+        margin: 5em 0;
+        display: flex;
+        justify-content: space-around;
+        section {
+            text-align: center;
+            width: 25%;
+            h3 {
+                font-weight: normal;
+                text-transform: uppercase;
+                padding-bottom: 0.5em;
+            }
+            img {
+                width: 180px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
