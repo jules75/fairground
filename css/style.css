@@ -107,7 +107,7 @@ main {
         font-weight: normal;
     }
     h2 {
-        margin: 1.25em 0 -0.5em 0;
+        margin: 2em 0 1em 0;
     }
     img {
         width: 100%;
@@ -154,6 +154,11 @@ main {
                 margin-bottom: 20px;
             }
         }
+    }
+    img.service {
+        float: right;
+        width: 180px;
+        margin: 0 0 1em 1em;
     }
 }
 
