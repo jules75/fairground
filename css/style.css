@@ -113,27 +113,22 @@ main, footer {
         width: 100%;
         border-radius: 15px;
     }
-    img#kel {
-        float: left;
+    img#kel, img#kim {
         width: 300px;
-        margin: 0 15px 15px 0;
-    }
-    img#kim {
-        float: right;
-        width: 300px;
-        margin: 0 0 15px 15px;
+        margin: 15px;
     }
     p {
         margin: 1em 0;
     }
-    p.divider {
-        clear: both;
-        padding: 1em;
-        border-bottom: 1px solid white;
-    }
     ul {
         padding: 0 0 0 2em;
         list-style-type: square;
+    }
+    div.profile {
+        display: flex;
+        align-items: center;
+        padding: 1em 0;
+        border-bottom: 1px solid white;        
     }
     div#offerings {
         font-size: 1.5rem;
