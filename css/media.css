@@ -6,22 +6,22 @@
     }
 
     header {
-        img#logo {
+        & img#logo {
             width: 600px;
             margin: 2rem auto;
         }
     }
 
     main {
-        div.profile {
+        & div.profile {
             display: flex;
             align-items: center;     
         }
-        div#offerings {
+        & div#offerings {
             margin-top: 5em;
             display: flex;
             justify-content: space-around;
-            section {
+            & section {
                 text-align: center;
                 width: 25%;
             }
@@ -36,14 +36,14 @@
     }
 
     header {
-        img#logo {
+        & img#logo {
             width: 90%;
         }
     }
 
     main {
-        div#offerings {
-            img {
+        & div#offerings {
+            & img {
                 display: none;
             }
         }

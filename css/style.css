@@ -22,33 +22,33 @@ html {
 body#home, body#home main {
     background: #e3c0b5;
     color: #88432a;
-    path {
+    & path {
         fill: #88432a;
     }
-    header, header a {
+    & header, header a {
         color: #88432a;
     }
 }
 body#about, body#about main {
     background: #013730;
     color: #ddd;
-    path {
+    & path {
         fill: #ddd;
     }
-    header, header a {
+    & header, header a {
         color: #ddd;
     }
 }
 body#services, body#services main {
     background: #88432a;
     color: #eee;
-    path {
+    & path {
         fill: #eee;
     }
-    header, header a {
+    & header, header a {
         color: #eee;
     }
-    h2 {
+    & h2 {
         border-bottom: 1px solid #eee;
     }
 }
@@ -60,27 +60,27 @@ header, main h2 {
 header {
     padding-top: 2em;
     font-size: 1.5rem;
-    div {
+    & div {
         display: flex;
         align-items: center;
         gap: 20px;
         justify-content: space-between;
         margin-bottom: 2em;
     }
-    img#logo {
+    & img#logo {
         width: 600px;
         margin: 2rem auto;
     }
-    ul {
+    & ul {
         display: flex;
         list-style-type: none;
         gap: 1em;
     }
-    ul#socials svg {
+    & ul#socials svg {
         width: 40px;
         height: 40px;
     }
-    a {
+    & a {
         text-decoration: none;
     }
 }
@@ -92,38 +92,38 @@ main, footer {
     font-optical-sizing: auto;
     font-weight: 300;
     overflow: auto;
-    h1 {
+    & h1 {
         text-align: center;
         padding: 0.5em;
         margin: 2em 0 1em 0;
         border-radius: 10px;
     }
-    h1, h2 {
+    & h1, h2 {
         font-weight: 300;
     }
-    h2 {
+    & h2 {
         margin: 2em 0 1em 0;
     }
-    img {
+    & img {
         width: 100%;
         border-radius: 15px;
     }
-    img#kel, img#kim {
+    & img#kel, img#kim {
         width: 300px;
         margin: 15px;
     }
-    p {
+    & p {
         margin: 1em 0;
     }
-    ul {
+    & ul {
         padding: 0 0 0 2em;
         list-style-type: square;
     }
-    div.profile {
+    & div.profile {
         padding: 1em 0;
         border-bottom: 1px solid white;        
     }
-    div#offerings {
+    & div#offerings {
         font-size: 1.5rem;
         padding-top: 2em;
         section {
@@ -138,7 +138,7 @@ main, footer {
             }
         }
     }
-    img.service {
+    & img.service {
         float: right;
         width: 180px;
         margin: 0 0 1em 1em;
