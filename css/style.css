@@ -19,27 +19,7 @@ html {
 /**
  * color schemes
  */
-body#home, body#home main {
-    background: #e3c0b5;
-    color: #88432a;
-    & path {
-        fill: #88432a;
-    }
-    & header, header a {
-        color: #88432a;
-    }
-}
-body#about, body#about main {
-    background: #013730;
-    color: #ddd;
-    & path {
-        fill: #ddd;
-    }
-    & header, header a {
-        color: #ddd;
-    }
-}
-body#services, body#services main {
+body, body main {
     background: #e3c0b5;
     color: #88432a;
     & path {
@@ -121,7 +101,6 @@ main, footer {
     }
     & div.profile {
         padding: 1em 0;
-        border-bottom: 1px solid white;        
     }
     & div#offerings {
         font-size: 1.5rem;
