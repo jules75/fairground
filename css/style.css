@@ -40,16 +40,16 @@ body#about, body#about main {
     }
 }
 body#services, body#services main {
-    background: #88432a;
-    color: #eee;
+    background: #e3c0b5;
+    color: #88432a;
     & path {
-        fill: #eee;
+        fill: #88432a;
     }
     & header, header a {
-        color: #eee;
+        color: #88432a;
     }
     & h2 {
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #88432a;
     }
 }
 
