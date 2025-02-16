@@ -1,3 +1,24 @@
+<?php
+
+if (!empty($_POST)) {
+
+    $to = 'jules1975@pm.me';
+    $subject = 'Test Email';
+    $message = print_r($_POST, true);
+    $headers = 'From: sender@example.com' . "\r\n" .
+            'Reply-To: sender@example.com' . "\r\n" .
+            'X-Mailer: PHP/' . phpversion();
+
+    if(mail($to, $subject, $message, $headers)) {
+        echo 'Email sent successfully.';
+    } 
+    else {
+        echo 'Email sending failed.';
+    }
+
+}
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -53,7 +74,7 @@
 
     <h2>Register your interest</h2>
 
-    <form>
+    <form method="POST">
 
         <label for="name">Name</label>
         <input name="name" id="name" />
