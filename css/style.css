@@ -143,22 +143,22 @@ p.register {
 }
 
 form {
-    label {
+    & label {
         margin: 1em 0 0.1em 0;
     }
-    label, input, button {
+    & label, & input, & button {
         display: block;
     }
-    input, select, textarea, button {
+    & input, & select, & textarea, & button {
         font-size: 1em;
         padding: 0.5em;
         border-radius: 10px;
     }
-    textarea {
+    & textarea {
         width: 20em;
         height: 5em;
     }
-    button {
+    & button {
         margin-top: 2em;
     }
 }
