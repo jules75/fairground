@@ -53,28 +53,35 @@
 
     <h2>Register your interest</h2>
 
-    <label for="name">Name</label>
-    <input name="name" />
+    <form>
 
-    <label for="phone">Phone</label>
-    <input name="phone" />
+        <label for="name">Name</label>
+        <input name="name" id="name" />
 
-    <label for="email">Email</label>
-    <input name="email" />
+        <label for="phone">Phone</label>
+        <input name="phone" id="phone" />
 
-    <label for="town">Town/suburb</label>
-    <input name="town" />
+        <label for="email">Email</label>
+        <input name="email" id="email" type="email" />
 
-    <label for="service">Service you're interested in</label>
-    <select name="service">
-        <option>Couples</option>
-        <option>Parenting</option>
-        <option>Mental health</option>
-        <option>Other</option>
-    </select>
+        <label for="town">Town/suburb</label>
+        <input name="town" id="town" />
 
-    <label for="comments">Comments</label>
-    <textarea name="comments"></textarea>
+        <label for="service">Service you're interested in</label>
+        <select name="service" id="service">
+            <option></option>
+            <option>Couples</option>
+            <option>Parenting</option>
+            <option>Mental health</option>
+            <option>Other</option>
+        </select>
+
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments"></textarea>
+
+        <button>Send</button>
+
+    </form>
 
     </main>
 
