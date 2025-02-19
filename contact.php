@@ -1,21 +1,11 @@
 <?php
 
-if (!empty($_POST)) {
-
-    $to = 'jules1975@pm.me';
-    $subject = 'Test Email';
-    $message = print_r($_POST, true);
-    $headers = 'From: sender@example.com' . "\r\n" .
-            'Reply-To: sender@example.com' . "\r\n" .
-            'X-Mailer: PHP/' . phpversion();
-
-    if(mail($to, $subject, $message, $headers)) {
-        echo 'Email sent successfully.';
-    } 
-    else {
-        echo 'Email sending failed.';
-    }
-
+$submitted = false;
+if (!empty($_POST['name'])) {
+    $_POST['submitted_at'] = date('Y-m-d H:i:s', time());
+    $form = print_r($_POST, true);
+    file_put_contents('contacts.txt', $form, FILE_APPEND);
+    $submitted = true;
 }
 
 ?>
@@ -74,35 +64,43 @@ if (!empty($_POST)) {
 
     <h2>Register your interest</h2>
 
-    <form method="POST">
+    <?php if ($submitted): ?>
 
-        <label for="name">Name</label>
-        <input name="name" id="name" />
+        <p><strong>Thanks! Your details have been sent and someone will be in touch.</strong></p>
 
-        <label for="phone">Phone</label>
-        <input name="phone" id="phone" />
+    <?php else: ?>
 
-        <label for="email">Email</label>
-        <input name="email" id="email" type="email" />
+        <form method="POST">
 
-        <label for="town">Town/suburb</label>
-        <input name="town" id="town" />
+            <label for="name">Name</label>
+            <input name="name" id="name" required />
 
-        <label for="service">Service you're interested in</label>
-        <select name="service" id="service">
-            <option></option>
-            <option>Couples</option>
-            <option>Parenting</option>
-            <option>Mental health</option>
-            <option>Other</option>
-        </select>
+            <label for="phone">Phone</label>
+            <input name="phone" id="phone" />
 
-        <label for="comments">Comments</label>
-        <textarea name="comments" id="comments"></textarea>
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" />
 
-        <button>Send</button>
+            <label for="town">Town/suburb</label>
+            <input name="town" id="town" />
 
-    </form>
+            <label for="service">Service you're interested in</label>
+            <select name="service" id="service">
+                <option></option>
+                <option>Couples</option>
+                <option>Parenting</option>
+                <option>Mental health</option>
+                <option>Other</option>
+            </select>
+
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments"></textarea>
+
+            <button>Send</button>
+
+        </form>
+
+    <?php endif; ?>
 
     </main>
 
